@@ -5,77 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>REGISTERATION</title>
-</head>
-<style>
-    * {
-        box-sizing: border-box
-    }
-
-    /* Add padding to containers */
-    .container {
-        max-width: 500px;
-        margin: auto;
-        background: white;
-        padding: 10px;
-        border-radius: 50px;
-    }
-
-    /* Full-width input fields */
-    input[type=text],
-    input[type=password] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-
-    input[type=text]:focus,
-    input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-
-    /* Overwrite default styles of hr */
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-    }
-
-    /* Set a style for the submit/register button */
-    .registerbtn {
-        background-color:palevioletred;
-        color: white;
-        padding: 16px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;
-    }
-
-    .registerbtn:hover {
-        opacity: 1;
-    }
-
-    /* Add a blue text color to links */
-    a {
-        color: dodgerblue;
-    }
-
-    /* Set a grey background color and center the text of the "sign in" section */
-    .signin {
-        background-color: #f1f1f1;
-        text-align: center;
-    }
-
-    body {
-        background-image: url(wall.png);
-    }
-</style>
-
 </head>
 
 <body>
@@ -83,7 +14,10 @@
     <form action="action_page.php">
         <div class="container">
 
-            <h1>Register</h1>
+            <center>
+                <h1>Register</h1>
+            </center>
+
             <p>Please fill in this form to create an account.</p>
             <hr>
 
@@ -99,25 +33,29 @@
             <br>
 
             <label for="age"><b>Age</b></label>
-            <input type="number" placeholder="Enter Age" name="age" id="age" required>
             <br>
+            <input type="number" id="age" placeholder="Enter Age" name="age" equired>
+    
             <br>
 
             <label for="phone"><b>Phone</b></label>
-            <input type="number" placeholder="Enter Phone" name="phone" id="phone" required>
             <br>
+            <input type="number" placeholder="Enter Phone" name="phone" id="phone" required>
+
             <br>
 
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
             <label for="address"><b>Address</b></label>
-            <input type="text" placeholder="Enter Address" name="address" id="address" required>
+            <textarea id="address" name="address" rows="3" cols="60"></textarea>
+
+            <br>
 
             <label for="postcode"><b>Postcode</b></label>
-            <input type="number" placeholder="Enter Postcode" name="postcode" id="postcode" required>
+            <input type="text" placeholder="Enter Postcode" name="postcode" id="postcode" required>
 
-            <label for="city"><b>State</b></label>
+            <label for="city"><b>City</b></label>
             <input type="text" placeholder="Enter City" name="city" id="city" required>
 
             <label for="state"><b>State</b></label>
@@ -143,7 +81,5 @@
         </div>
     </form>
 </body>
-
-</html>
 
 </html>
